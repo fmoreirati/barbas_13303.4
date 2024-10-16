@@ -4,8 +4,8 @@
   --white: #ffffff;
   --shadow: rgba(0, 0, 0, 0.5);
   --font-size: 14pt;
-  --font-primary: "nunito";
-  --font-secondary: "roboto";
+  --font-primary: "Nunito", sans-serif;
+  --font-secondary: "Roboto", sans-serif;
 }
 
 /* Reset: limpa stilo dos navegadores */
@@ -13,6 +13,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Confituração de estilos para todo o site no Corpo(body) */
+body {
+  font-size: var(--font-size);
+  font-family: var(--font-primary);
 }
 
 /* Itens comuns no site */

@@ -1,52 +1,9 @@
-body {
-    font-family: Arial, sans-serif;
-}
-
 header {
     background-image: url(../imagem/barbershop-background.jpg);
     background-position: center;
     background-size: cover;
     min-height: 400px;
     /* padding-top: 20px; */
-}
-
-.navbar {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    padding: 20px;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: var(--shadow);
-    position: sticky;
-    top: 0
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-}
-
-/* .nav-links li {
-    margin-right: 20px;
-} */
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--white);
-    font-size: 1.5rem;
-    padding: 5px 15px;
-    transition: 0.3s ease;
-}
-
-.nav-links a:hover {
-    /* background-color: var(--yellow);
-    border-radius: 5px; */
-    color: var(--yellow);
-    border-bottom: solid 2px var(--yellow);
-    transition: 0.3s ease;
-
 }
 
 .logo img {
@@ -136,16 +93,17 @@ header .logo {
 }
 
 
-.menu-container{
+.menu-container {
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
     max-width: 1280px;
     padding: 20px;
-    
+
 }
-.menu-itens{
+
+.menu-itens {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,10 +113,10 @@ header .logo {
     width: 33.33%;
 }
 
-.menu-itens img{
+.menu-itens img {
     width: 200px;
     height: 200px;
-    border-radius: 50%; 
+    border-radius: 50%;
     border: solid 2px var(--yellow);
 }
 
@@ -188,10 +146,17 @@ header .logo {
     overflow: hidden;
 }
 
-.card img {
+.card-img {
+    width: 100%;
+    height: 300px;
+}
+
+.card-img img {
+    height: 100%;
     width: 100%;
     display: block;
     margin: auto;
+    object-fit: cover;
 }
 
 .card-content {
@@ -217,7 +182,7 @@ header .logo {
 } */
 
 .card-content h2 {
-    font-size: 32px;
+    font-size: 24px;
     margin-bottom: 15px;
 }
 
@@ -237,4 +202,3 @@ header .logo {
 .card-content:hover>* {
     transform: translateY(0px);
 } */
-
