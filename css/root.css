@@ -20,6 +20,10 @@
 body {
   font-size: var(--font-size);
   font-family: var(--font-primary);
+  margin-top: 65px;
+  background-image: url(../imagem/bglogin.jpg);
+  background-position: bottom center;
+  background-size: contain;
 }
 
 /* Itens comuns no site */
