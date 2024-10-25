@@ -7,6 +7,10 @@
   --font-size: 14pt;
   --font-primary: "Nunito", sans-serif;
   --font-secondary: "Roboto", sans-serif;
+
+  /* Bootstrap */
+  --bs-primary: var(--yellow);
+  --bs-secondary: #b19645;
 }
 
 /* Reset: limpa stilo dos navegadores */
