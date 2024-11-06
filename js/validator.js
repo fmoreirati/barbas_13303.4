@@ -2,6 +2,7 @@ validateName()
 // validateRequired()
 validateEmail()
 validateTel()
+validatePassword()
 
 function validateName() {
     const element = document.querySelector("#nameInput")
@@ -64,6 +65,20 @@ function validateTel() {
         }
         message.innerHTML = error
         //setContentElement("#telHelp", error)
+    })
+}
+
+function validatePassword() {
+    const element = document.querySelector("#passwordInput")
+    const message = document.querySelector("#passwordHelp")
+    element.addEventListener('keyup', (e) => {
+        const value = e.target.value
+        if (value.length < 8) {
+            message.innerHTML = "Senha muito curta! Minimo de 8 caracteres"
+        } else {
+            message.innerHTML = ''
+        }
+
     })
 }
 
