@@ -42,11 +42,12 @@ function navBarComponent() {
 export function navBarComponentTemplate() {
     const localTemplate = 'components/nav-component/nav-component.html'
     const localStyle = 'components/nav-component/nav-component.css'
-
     const element = document.getElementById('navbar-component')
+    // Style -> CSS
     element.innerHTML = ''
     element.innerHTML += `<link rel="stylesheet" href="${localStyle}">`
 
+    //Template -> HTML 
     fetch(localTemplate)
         .then((res) => res.text())
         .then((nav) => {
