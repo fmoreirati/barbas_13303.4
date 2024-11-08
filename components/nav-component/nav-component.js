@@ -1,7 +1,7 @@
 //navBarComponent()
 //navBarComponentTemplate()
 
-function navBarComponent() {
+export function navBarComponent() {
     const element = document.getElementById('navbar-component')
     const navbar = `
     <nav class="navbar navbar-expand-lg fixed-top">
