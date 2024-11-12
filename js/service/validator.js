@@ -2,6 +2,7 @@
 export function validateName() {
     const element = document.querySelector("#nameInput")
     const message = document.querySelector("#nameHelp")
+    if (!element) return
     element.addEventListener('blur', (e) => {
         const value = e.target.value
         console.log(value)
@@ -20,6 +21,7 @@ export function validateName() {
 export function validateEmail() {
     const element = document.querySelector("#emailInput")
     const message = document.querySelector("#emailHelp")
+    if (!element) return
     element.addEventListener('keyup', (e) => {
         const value = e.target.value
         console.log(value)
@@ -37,6 +39,7 @@ export function validateTel() {
     //const element = getElement("#telInput")
     const element = document.querySelector("#telInput")
     const message = document.querySelector("#telHelp")
+    if (!element) return
     element.setAttribute('maxlength', '15')
     element.addEventListener('keyup', (e) => {
         const value = e.target.value
@@ -53,6 +56,7 @@ export function validateTel() {
 export function validatePassword() {
     const element = document.querySelector("#passwordInput")
     const message = document.querySelector("#passwordHelp")
+    if (!element) return
     element.addEventListener('keyup', (e) => {
         const value = e.target.value
         if (value.length < 8) {

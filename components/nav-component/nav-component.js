@@ -1,7 +1,7 @@
 //navBarComponent()
 //navBarComponentTemplate()
 
-function navBarComponent() {
+export function navBarComponent() {
     const element = document.getElementById('navbar-component')
     const navbar = `
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -42,11 +42,12 @@ function navBarComponent() {
 export function navBarComponentTemplate() {
     const localTemplate = 'components/nav-component/nav-component.html'
     const localStyle = 'components/nav-component/nav-component.css'
-
     const element = document.getElementById('navbar-component')
+    // Style -> CSS
     element.innerHTML = ''
     element.innerHTML += `<link rel="stylesheet" href="${localStyle}">`
 
+    //Template -> HTML 
     fetch(localTemplate)
         .then((res) => res.text())
         .then((nav) => {
