@@ -1,12 +1,8 @@
-validateName()
-// validateRequired()
-validateEmail()
-validateTel()
-validatePassword()
 
-function validateName() {
+export function validateName() {
     const element = document.querySelector("#nameInput")
     const message = document.querySelector("#nameHelp")
+    if (!element) return
     element.addEventListener('blur', (e) => {
         const value = e.target.value
         console.log(value)
@@ -22,9 +18,10 @@ function validateName() {
     })
 }
 
-function validateEmail() {
+export function validateEmail() {
     const element = document.querySelector("#emailInput")
     const message = document.querySelector("#emailHelp")
+    if (!element) return
     element.addEventListener('keyup', (e) => {
         const value = e.target.value
         console.log(value)
@@ -38,23 +35,11 @@ function validateEmail() {
     })
 }
 
-// //Função para pegar os elementos
-// function getElement(elementSelector) {
-//     return document.querySelector(elementSelector)
-// }
-// //Função para preenche do conteudo do elemento
-// function setContentElement(elementSelector, content) {
-//     const element = getElement(elementSelector)
-//     if (element) {
-//         element.innerHTML = content
-//     }
-// }
-
-
-function validateTel() {
+export function validateTel() {
     //const element = getElement("#telInput")
     const element = document.querySelector("#telInput")
     const message = document.querySelector("#telHelp")
+    if (!element) return
     element.setAttribute('maxlength', '15')
     element.addEventListener('keyup', (e) => {
         const value = e.target.value
@@ -68,9 +53,10 @@ function validateTel() {
     })
 }
 
-function validatePassword() {
+export function validatePassword() {
     const element = document.querySelector("#passwordInput")
     const message = document.querySelector("#passwordHelp")
+    if (!element) return
     element.addEventListener('keyup', (e) => {
         const value = e.target.value
         if (value.length < 8) {
@@ -81,8 +67,6 @@ function validatePassword() {
 
     })
 }
-
-
 
 
 
